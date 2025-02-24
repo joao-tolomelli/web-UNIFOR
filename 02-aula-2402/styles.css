@@ -49,6 +49,15 @@ main{
     margin-bottom: .3rem;
 }
 
+.info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.info-container>h2{
+margin-bottom: 1rem;
+}
 
 footer{
     background-color: #284b63;

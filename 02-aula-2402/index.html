@@ -10,19 +10,23 @@
     <style>
       .button-container > button:hover {
         cursor: pointer;
+        background-color: #2f5f80;
       }
 
-      .button-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 2rem;
+      .button-container > button {
+        border: none;
+        border-radius: 4rem;
+        background-color: #284b63;
+        font-size: 1rem;
+        color: #ffffff;
+        padding: 0.8rem 3rem;
+        width: 20rem;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1 class="main-title">Air Wiki</h1>
+      <h1 class="main-title" id="top">Air Wiki</h1>
       <nav>
         <ul class="link-collection">
           <li><a href="/pages/Airbus/">Airbus</a></li>
@@ -33,7 +37,45 @@
       </nav>
     </header>
     <main>
-      <section>
+      <a href="#top" style="position: fixed; right: 1.5rem; bottom: 5rem;">
+        <svg
+          fill="#284b63"
+          version="1.1"
+          id="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="64px"
+          height="64px"
+          viewBox="0 0 32 32"
+          xml:space="preserve"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <style type="text/css">
+              .st0 {
+                fill: none;
+              }
+            </style>
+            <title>up-to-top</title>
+            <polygon
+              points="16,14 6,24 7.4,25.4 16,16.8 24.6,25.4 26,24 "
+            ></polygon>
+            <rect x="4" y="8" width="24" height="2"></rect>
+            <rect
+              id="_Transparent_Rectangle_"
+              class="st0"
+              width="32"
+              height="32"
+            ></rect>
+          </g>
+        </svg>
+      </a >
+      <section class="info-container">
         <h2>Sobre nós</h2>
         <p>
           Sua principal fonte de informações detalhadas e atualizadas sobre tudo
@@ -48,7 +90,7 @@
           horizontes no conhecimento aeronáutico!
         </p>
       </section>
-      <section>
+      <section class="info-container">
         <h2>Apoie nosso projeto</h2>
         <p>
           Estamos empenhados em fornecer informações precisas e abrangentes
@@ -60,20 +102,16 @@
           podemos levar a Air Wiki a novos patamares e garantir que continuemos
           a ser uma fonte confiável e inspiradora para todos.
         </p>
-        <div class="button-container">
-          <button
-            style="
-              border: none;
-              border-radius: 4rem;
-              background-color: #284b63;
-              font-size: 1rem;
-              color: #ffffff;
-              padding: 0.8rem 3rem;
-              width: 20rem;
-            "
-          >
-            Apoie aqui
-          </button>
+        <div
+          class="button-container"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 2rem;
+          "
+        >
+          <button>Apoie aqui</button>
         </div>
       </section>
     </main>
