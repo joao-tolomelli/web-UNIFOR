@@ -1,0 +1,12 @@
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.caixa {
+  width: 100px; 
+  height: 100px;
+  background-color: #3498db;
+  margin: 10px;
+}

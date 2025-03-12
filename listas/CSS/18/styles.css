@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px; /* Espaço entre as colunas */
+}
+
+.item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 coluna em telas menores que 600px */
+  }
+}

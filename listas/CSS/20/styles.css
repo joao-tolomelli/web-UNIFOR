@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente do rosa para o laranja */
+  height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+  margin: 0; /* Remove as margens padrão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
