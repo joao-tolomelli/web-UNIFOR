@@ -28,6 +28,7 @@ function toggleTask(element) {
 
 function deleteTask(element) {
   element.parentElement.remove();
+  saveTask();
 }
 
 function saveTask() {

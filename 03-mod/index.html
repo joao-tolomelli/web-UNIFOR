@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jogos para zerar</h1>
+      <div class="todo-input">
+        <span class="input-lbl">Nome do jogo:</span>
+        <input type="text" id="gameInput" />
+        <span class="input-lbl">Inicio da jornada:</span>
+        <input type="date" id="gameStartDate" />
+        <button onclick="addGame()">Adicionar</button>
+      </div>
+      <ul id="gameList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
